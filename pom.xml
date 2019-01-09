@@ -13,13 +13,14 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>springboot</name>
     <description>qujiali project for Spring Boot</description>
+
     <!--Jdk1.8-->
     <properties>
         <java.version>1.8</java.version>
     </properties>
-
     <dependencies>
         <!--SpringBootWeb包-->
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -30,7 +31,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
+        <!--使用thymeleaf模版来渲染html-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -42,7 +43,6 @@
             <optional>true</optional>
             <scope>true</scope>
         </dependency>
-
         <!--Swagger引入start-->
         <dependency>
             <groupId>io.springfox</groupId>
@@ -55,6 +55,31 @@
             <version>2.2.2</version>
         </dependency>
         <!--Swagger引入end-->
+
+        <!--mybatis start-->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.4.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.generator</groupId>
+            <artifactId>mybatis-generator</artifactId>
+            <version>1.3.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.generator</groupId>
+            <artifactId>mybatis-generator-core</artifactId>
+            <version>1.3.5</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>6.0.6</version>
+        </dependency>
+
+        <!--mybatis end-->
+
     </dependencies>
 
     <build>
